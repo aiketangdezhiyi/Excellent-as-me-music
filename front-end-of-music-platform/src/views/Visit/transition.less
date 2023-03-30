@@ -1,0 +1,21 @@
+.user-enter-active,
+.song-enter-active,
+.favorite-enter-active {
+    -webkit-transition        : 1.5s;
+    transition                : 1.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.33, -0.18, 0.57, 1.21);
+            transition-timing-function: cubic-bezier(0.33, -0.18, 0.57, 1.21);
+}
+
+.song-enter,
+.user-enter {
+    opacity          : 0;
+    -webkit-transform: translateX(-100%);
+    transform        : translateX(-100%);
+}
+
+.favorite-enter {
+    opacity          : 0;
+    -webkit-transform: translateX(100%);
+    transform        : translateX(100%);
+}

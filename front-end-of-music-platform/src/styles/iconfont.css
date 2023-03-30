@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3114265 */
+  src: url('//at.alicdn.com/t/font_3114265_rl130avh97.woff2?t=1641377211580') format('woff2'),
+       url('//at.alicdn.com/t/font_3114265_rl130avh97.woff?t=1641377211580') format('woff'),
+       url('//at.alicdn.com/t/font_3114265_rl130avh97.ttf?t=1641377211580') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bangbangtang:before {
+  content: "\e6b0";
+}
+
+.icon-bangbangtang1:before {
+  content: "\e60e";
+}
+
+.icon-bangbangtang2:before {
+  content: "\e62d";
+}
+
+.icon-search:before {
+  content: "\e6bc";
+}
+
+.icon-icon:before {
+  content: "\e68e";
+}
+
+.icon-redu:before {
+  content: "\e64a";
+}
+
+.icon-icfemale:before {
+  content: "\e629";
+}
+
+.icon-icmale:before {
+  content: "\e63a";
+}
+
+.icon-moreandroid:before {
+  content: "\e6a5";
+}
+
+.icon-24gl-playCircle:before {
+  content: "\ea6e";
+}
+
+.icon-24gf-playlistMusic2:before {
+  content: "\ea86";
+}
+
+.icon-yinleyule:before {
+  content: "\e617";
+}

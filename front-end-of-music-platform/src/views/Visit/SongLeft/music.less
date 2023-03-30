@@ -1,0 +1,87 @@
+.search-list-container {
+    width: 100%;
+    .search-item {
+      &:hover {
+        background-color: lighten(#e2f4ff, 3%);
+      }
+      &.header {
+        font-size: 1rem;
+        color: #14a9ff;
+        background-color: #e2f4ff;
+      }
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #f0f0f0;
+      & > span {
+        width: 33.33%;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &:nth-child(2n) {
+          font-weight: 600;
+          color: #fff;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .setting-button {
+          background: @blue;
+          padding: 10px 25px;
+          -webkit-transition: background 0.8s;
+          transition: background 0.8s;
+          &:hover {
+            background: desaturate(@blue, 21%);
+          }
+        }
+      }
+  
+      .btn-wrapper {
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        right: 56px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .header-btn {
+        background: url("~@/assets/sprite.png");
+        width: 14px;
+        height: 14px;
+        margin: 0 5px;
+        display: inline-block;
+        cursor: pointer;
+        &.play-btn {
+          background-position: 0 -195px;
+          &:hover {
+            background-position: 0 -177px;
+          }
+        }
+        &.star-btn {
+          background-position: 0 -123px;
+          &:hover {
+            background-position: 0 -105px;
+          }
+        }
+        &.share-btn {
+          background: url(../../../assets/icon_splice.png);
+          background-position: -300px 0px;
+          &:hover {
+            background-position: -300px -30px;
+          }
+        }
+      }
+    }
+  }

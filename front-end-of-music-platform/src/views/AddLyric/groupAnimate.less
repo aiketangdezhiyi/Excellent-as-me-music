@@ -1,0 +1,30 @@
+.group-enter-active,
+.group-leave-active,
+.group-move{
+    -webkit-transition: all 1s;
+    transition        : all 1s;
+}
+
+.group-leave-active {
+    position: absolute;
+}
+
+
+.group-enter {
+    -webkit-transform: translateX(-300px);
+    transform        : translateX(-300px);
+    opacity          : 0;
+}
+
+.group-enter-to,
+.group-leave {
+    -webkit-transform: translateX(0);
+    transform        : translateX(0);
+    opacity          : 1;
+}
+
+.group-leave-to {
+    -webkit-transform: translateX(300px);
+    transform        : translateX(300px);
+    opacity          : 0;
+}

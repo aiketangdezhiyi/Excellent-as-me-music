@@ -1,0 +1,32 @@
+.h-search-group {
+    right : -15px;
+    bottom: 15px;
+
+    .h-search-input {
+        height       : 30px;
+        width        : 134px;
+        padding      : 0 29px 0 15px;
+        line-height  : 30px;
+        color        : #222;
+        font-size    : 12px;
+        border       : 1px solid #ccd0d7;
+        border-radius: 15px;
+
+        &:focus {
+            border-color: @blue;
+        }
+
+    }
+
+    .iconfont {
+        display          : inline-block;
+        -webkit-transform: translateX(-130%);
+        transform        : translateX(-130%);
+
+        svg {
+            -webkit-transform: rotateY(-180deg);
+            transform        : rotateY(-180deg);
+            cursor: pointer;
+        }
+    }
+}

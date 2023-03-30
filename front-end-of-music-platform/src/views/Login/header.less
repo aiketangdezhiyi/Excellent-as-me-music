@@ -1,0 +1,39 @@
+.login-wrapper {
+    h2 {
+        width        : 980px;
+        height       : 28px;
+        margin       : 0 auto;
+        margin-bottom: 28px;
+        font-weight  : normal;
+        line-height  : 56px;
+        position     : relative;
+        z-index      : 1;
+
+        & > span {
+            display           : inline-block;
+            padding           : 0 20px;
+            width             : 80px;
+            height            : 80px;
+            -webkit-box-sizing: border-box;
+            box-sizing        : border-box;
+            font-size         : 60px;
+            color             : #fff;
+            border-radius     : 50%;
+            opacity           : 1;
+            background        : #E2E0FF;
+            position          : relative;
+
+        }
+
+        
+    }
+}
+.title-enter-active {
+    -webkit-transition        : 1s;
+    transition: 1s;
+}
+.title-enter {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+}

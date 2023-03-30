@@ -1,0 +1,49 @@
+.player-bar-container {
+    .player-ico {
+        margin-left        : 30px;
+        padding : 0 10px;
+        height             : 100%;
+        display            : -webkit-box;
+        display            : -webkit-flex;
+        display            : -ms-flexbox;
+        display            : flex;
+        -webkit-box-align  : center;
+        -webkit-align-items: center;
+        -ms-flex-align     : center;
+        align-items        : center;
+
+        .player-volumn {
+            background         : url("../../assets/song.png") no-repeat;
+            width              : 16px;
+            height             : 16px;
+            background-position: -64px -195px;
+            position           : relative;
+            cursor             : pointer;
+            margin-right: 10px;
+
+            &:hover {
+                background-position: -80px -195px;
+
+                &>.volume-wrapper {
+                    display: block;
+                }
+            }
+
+            .volume-wrapper {
+                display          : none;
+                -webkit-transform: translateY(-100%) translateX(-25%);
+                transform        : translateY(-100%) translateX(-25%);
+            }
+        }
+        .player-list {
+            color : #ccc;
+            display: inline-block;
+            cursor: pointer;
+            &:hover {
+                color : @cyan;
+            }
+        
+        }
+
+    }
+}

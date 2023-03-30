@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="<%= BASE_URL %>favicon.ico" rel="shortcut icon">
+  <title>优我创享音乐</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+
+  <style>
+    .prev-loading {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prev-loading > img {
+      width: 50px;
+      height: 50px;
+      display: block;
+    }
+  </style>
+
+
+
+  <div id="app">
+    <div class="prev-loading">
+      <img src="https://static.leetcode-cn.com/cn-mono-assets/production/assets/light-loading.9d7b0f1c.gif" alt="">
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+
+</body>
+
+</html>

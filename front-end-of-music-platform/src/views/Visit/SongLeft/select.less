@@ -1,0 +1,28 @@
+.h-select-group {
+    font-size: 12px;
+    right: 200px;
+    bottom: 15px;
+    span {
+        color : #666;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        padding-bottom: 5px;
+        cursor: pointer;
+        border-bottom: 1px solid #fff;
+        &.active {
+            border-bottom: 1px solid @blue;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -5px;
+                width: 1px;
+                height: 1px;
+                font-size: 0;
+                border: 2px solid @blue;
+                -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+            }
+        }
+    }
+}

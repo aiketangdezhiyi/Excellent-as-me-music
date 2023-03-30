@@ -1,0 +1,38 @@
+@-webkit-keyframes text-animate {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: -100% 0
+    }
+}
+
+
+@keyframes text-animate {
+    0% {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: -100% 0
+    }
+}
+
+
+.about-wrapper {
+    li {
+        a {
+
+            background-image       : -webkit-linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39) !important;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            background-size        : 200% 100% !important;
+
+            &:hover {
+                -webkit-animation: text-animate 1s cubic-bezier(0, 0, 1, 1) infinite;
+                animation        : text-animate 1s cubic-bezier(0, 0, 1, 1) infinite;
+            }
+        }
+    }
+}

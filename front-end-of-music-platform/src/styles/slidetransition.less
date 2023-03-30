@@ -1,0 +1,24 @@
+.slide-enter-active,
+.slide-leave-active {
+    -webkit-transition: .5s;
+    transition        : .5s;
+}
+
+.slide-enter-to,
+.slide-leave {
+    -webkit-transform: translateX(0px);
+    transform        : translateX(0px);
+    opacity: 1;
+}
+
+.slide-enter {
+    opacity: 0;
+    -webkit-transform        : translateX(-100%);
+            transform        : translateX(-100%);
+}
+
+.slide-leave-to {
+    opacity: 0;
+    -webkit-transform        : translateX(100%);
+            transform        : translateX(100%);
+}

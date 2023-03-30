@@ -1,0 +1,83 @@
+.mx-auto {
+    margin: 0 auto !important;
+}
+
+@blue : #14a9ff; // 蓝色
+@cyan : #01e5ff; // 青色
+@lightblue : #E2F4FF; // 青蓝色
+@purple : #F1F0FF; // 淡紫色
+@gray : #aaa; // 灰色
+@pink : #FF85AD; // 粉色
+@black : #26282c; // 黑色
+
+@text-pink : rgb(251, 114, 153); 
+.color-cyan {
+    color: @cyan;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.wrapper-full {
+    width : 100%;
+    height: 100%;
+}
+
+.flex-center {
+    .d-flex();
+    -webkit-box-align      : center;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+    -webkit-box-pack       : center;
+    -webkit-justify-content: center;
+    -ms-flex-pack          : center;
+    justify-content        : center;
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.p-r {
+    position: relative;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-center {
+    position         : absolute;
+    left             : 50%;
+    top              : 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+}
+
+.p-center-x {
+    position         : absolute;
+    left             : 50%;
+    -webkit-transform: translateX(-50%);
+    transform        : translateX(-50%);
+}
+
+.text-ellipsis {
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear  : both;
+}

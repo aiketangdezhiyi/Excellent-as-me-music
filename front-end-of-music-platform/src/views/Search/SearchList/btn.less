@@ -1,0 +1,48 @@
+.search-item {
+    &:hover .btn-wrapper {
+        opacity: 1;
+    }
+
+    .btn-wrapper {
+        opacity           : 0;
+        right             : 160px;
+        position          : absolute;
+        -webkit-transition: opacity .2s;
+        transition        : opacity .2s;
+
+        .btn {
+            background  : url("~@/assets/icon_splice.png") no-repeat;
+            width       : 18px;
+            height      : 15px;
+            margin-right: 5px;
+            display     : inline-block;
+            cursor      : pointer;
+        }
+
+        .play-btn {
+            background-position: 0 0px;
+
+            &:hover {
+                background-position: 0 -30px;
+            }
+        }
+
+        .download-btn {
+            background-position: -90px 0;
+
+            &:hover {
+                background-position: -90px -30px;
+            }
+        }
+
+        .star-btn {
+            background-image   : url("~@/assets/sprite.png");
+            background-position: 0 -123px;
+
+            &:hover {
+                background-position: 0 -105px;
+            }
+
+        }
+    }
+}
